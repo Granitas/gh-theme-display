@@ -2,8 +2,8 @@ import logging
 import webbrowser
 
 import click
-from githeme.downloader import find_themes
-from githeme.generator import save_themes
+from ghthemedisplay.downloader import find_themes
+from ghthemedisplay.generator import save_themes
 
 
 @click.command()

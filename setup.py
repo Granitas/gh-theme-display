@@ -1,9 +1,9 @@
 from distutils.core import setup
 
 setup(
-    name='githeme',
+    name='ghthemedisplay',
     version='0.1',
-    packages=['githeme'],
+    packages=['ghthemedisplay'],
     url='http://github.com/granitas/github_theme_viewer',
     license='GPLv3',
     author='granitas',
@@ -11,7 +11,7 @@ setup(
     description='View generator for themes stored on github',
     entry_points="""
             [console_scripts]
-            githeme=githeme.main:cli
+            gh-theme-display=ghthemedisplay.main:cli
         """,
     requires=['click', 'parsel', 'requests'],
     include_package_data=True,
