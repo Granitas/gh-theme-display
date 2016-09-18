@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Themes</title>
+</head>
+<body>
+<ul>
+{% for theme in themes %}
+    <li style="text-align: center;list-style-type: none">
+        <a href="{{ theme.url }}">
+            <h2>
+                {{ theme.name }}
+            </h2>
+            <div>
+                {% if theme.image %}
+                <img width=800 src="{{ theme.image }}">
+                {% else %}
+                <span>no image</span>
+                {% endif %}
+            </div>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+</body>
+</html>
